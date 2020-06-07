@@ -1,2 +1,2 @@
-# 100-Days-CSS-Challenge
+# 100 Days CSS Challenge
 Learning and Solidify CSS
