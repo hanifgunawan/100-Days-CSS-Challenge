@@ -1,3 +1,5 @@
+![](https://github.com/hanifgunawan/100-Days-CSS-Challenge/blob/master/001-Sign%20Up%20Form/Upload%20Twitter.png)
+
 ## Problems
 
 * due to not using javascript, at the State Compontent (Dropdown List) I can't get what I want like the design prototype.
