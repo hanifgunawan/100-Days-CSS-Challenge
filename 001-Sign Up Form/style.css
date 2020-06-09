@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+}
+
+.container-nav {
+    position: relative;
+    background-color: #4A4A7A;
+    height: 100vh;
+    width: 100%;
+    padding: 1em;
+    color: #fff;
+    overflow: hidden;
+}
+
+.logo img {
+    max-width: 80px;
+    max-height: 80px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    
+
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.logotext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-left: 1em;
+}
+
+.logo em {
+    font-size: 0.8em;
+    padding-left: 0.3em;
+    letter-spacing: 0.1em;
+
+}
+
+.links ul {
+    margin-top: 4em;
+    margin-left: 5em;
+    list-style: none;
+}
+
+.links ul li {
+    padding: 0.4em 0.8em;
+    margin-bottom: 4em;
+    font-size: 1em;
+    color: #B1B1FF;
+
+}
+
+.footer-img img {
+    overflow-x: hidden;
+    left: 0;
+    top: 400px;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.2;
+    width: 100%;
+}
+
+.links .active {
+    border-left: 4px solid #00CBFF;
+    color: #fff;
+}
+
+main.content {
+    background-color: #D4D4FF;
+
+}
+
+.container-content {
+    width: 100%;
+    padding: 0 10em;
+   
+}
+
+.container-content h2 {
+    text-align: center;
+    color: #4A4A7A;
+    margin: 0.8em 0 1em 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.container-content h4 {
+    color: #4A4A7A;
+    font-size: 1.7em;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 1em;
+   
+}
+
+.form form input {
+    display: block;
+    padding: 0.75em 1em;
+    width: 100%;
+    border: 1px solid #B0B0E4;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 1em;
+}
+
+.form form input::placeholder {
+    color: #D4D4FF;
+}
+
+.form form label {
+    text-align: left;
+    margin-bottom: 0.5em;
+    color: #79798E;
+}
+
+.form-field {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 0.6fr 0.1fr 0.3fr;
+    align-items: center;
+
+}
+
+/* Form Label Input */
+label[for="firstname"], input#firstname {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+}
+
+input#firstname {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+}
+
+label[for="lastname"] {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+input#lastname {
+    grid-column: 3 / span 3;
+    grid-row: 2 / 3;
+}
+
+label[for="phone"] {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+input#phone {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+label[for="email"] {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+input#email {
+    grid-column: 3 / span 3;
+    grid-row: 5 / 6;
+}
+
+label[for="company"] {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+}
+
+input#company {
+    grid-column: 1 / span 5;
+    grid-row: 7 / 8;
+}
+
+label[for="city"] {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+}
+
+input#city {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+}
+
+label[for="zip"] {
+    grid-column: 5 / 6;
+    grid-row: 8 / 9;
+}
+
+input#zip {
+    grid-column: 5 / 6;
+    grid-row: 9 / 10;
+}
+
+label[for="state"] {
+    grid-column: 3 / 4;
+    grid-row: 8 / 9;
+  
+}
+
+.form-field button {
+    grid-column: 4 / span 3;
+    grid-row: 10 / 11;
+    background-color: #4A4A7A;
+    color: #fff;
+    border: none;
+    padding: 0.8em 1em;
+    border-radius: 50px;
+    margin-top: 1em;
+    outline: none;
+}
+
+select#state {
+    background-color: #fff;
+    opacity: 0;
+
+    position: relative;
+    grid-column: 3 / 4;
+    grid-row: 9 / 10;
+    padding: 0.7em 1em;
+    align-self: baseline;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #B0B0E4;
+    z-index: 2;
+
+}
+
+.select-custom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -8px;
+    grid-column: 3 / 4;
+    grid-row: 9 / 10;
+    background-color: #fff;
+    border: 1px solid #B0B0E4;
+    border-radius: 5px;
+    height: 75%;
+    width: 100%;
+
+}
+
+.select-custom::before {
+    content: "";
+    border: 1px solid #D4D4FF;
+    position: absolute;
+    top: -8px;
+    bottom: 0;
+    height: 100%;
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+}
+
+
+.select-custom::after {
+    content: "";
+    margin-top: 0.5em;
+    margin-left: 2em;
+    border: 6px solid transparent;
+    border-color: #D4D4FF transparent transparent;
+}
+
+.select-custom p {
+    font-size: 0.8em;
+    color: #D4D4FF;
+}
+

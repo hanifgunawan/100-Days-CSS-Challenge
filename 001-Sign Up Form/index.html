@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-nav">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+                <div class="logotext">
+                    <h1>HERNASA CIPTA SADA</h1>
+                    <P><em>Engineering & Management Consultant</em></P>
+                </div>
+            </div>
+            <nav class="links">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Project</li>
+                    <li class="active">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="footer-img">
+            <img src="hero.png" alt="png">
+        </div>
+    </div>
+    <main class="content">
+        <div class="container-content">
+            <h2>Get in Touch</h2>
+            <h4>Register for Information and Consulting Your Project Soon!</h4>
+            <div class="form">
+                <form class="form-field">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" placeholder="Your First Name">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Your Last Name">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="+62 000-0000-0000">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@example.com">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" placeholder="Your Company Name">
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="City">
+                    <label for="state">State</label>
+                    <select name="state" id="state" >
+                        <option value="BTJ" selected disabled>ABC</option>
+                        <option value="BTJ">BTJ</option>
+                        <option value="JKT">JKT</option>
+                        <option value="MDN">MDN</option>
+                    </select>
+                    <div class="select-custom">
+                        <p>NAD</p>
+                    </div>
+                    <label for="zip">Zip</label>
+                    <input type="text" name="zip" id="zip" pattern="[0-9]{5}" placeholder="12345">
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
