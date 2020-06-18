@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Credit Card Checkout</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="left-container-clip">
+                <div class="logo">
+                    <div class="title">
+                        <h1>KAOS MAJELIS LUCU INDONESIA</h1>
+                        <p>ID : 3784563746574</p>
+                    </div>
+                    <div class="logo-container">
+                        <img src="img/logoMLI.png" alt="logoMLI">
+                    </div>
+                </div>
+                <figure>
+                    <img src="img/shirt01.png" alt="shirt01">
+                </figure>
+                <div class="keterangan">
+                    <p>MATERIAL :</p>
+                    <p>COTTON 30S COMBED</p>
+                    <p>SIZE :</p>
+                    <ul class="size">
+                        <li>S</li>
+                        <li>M</li>
+                        <li class="selected">L</li>
+                        <li>XL</li>
+                    </ul>
+                    <p>COLOR :</p>
+                    <ul class="color">
+                        <li>BLACK</li>
+                        <li>WHITE</li>
+                        <li>RED</li>
+                    </ul>
+                    <p>PRICE :</p>
+                    <P>$ 32</P>
+                </div>
+                <div class="back-btn">
+                    <img src="img/iconback.png" alt="iconback">
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <h1>Payment Method</h1>
+            <ul>
+                <li class="active"><img src="img/visalogo.png" alt="visa"></li>
+                <li><img src="img/mastercard.png" alt="mastercard"></li>
+                <li><img src="img/westernlogo.png" alt="westernlogo"></li>
+                <li><img src="img/paypallog.png" alt="paypal"></li>
+            </ul>
+            <main class="credit-card">
+                <div class="card-picture">
+                    <img src="/img/creditcard.png" alt="credit-card">
+                </div>
+                <div class="table-data">
+                    <form>
+                        <div class="name-form">
+                            <input type="text" name="name" id="name" autocomplete="off" required />
+                            <label for="name" class="label-name">
+                                <span class="content-name">CARDHOLDER NAME</span>
+                            </label>
+                        </div>
+                        <div class="name-form">
+                            <input type="text" name="card" id="card" autocomplete="off" required />
+                            <label for="card" class="label-name">
+                                <span class="content-name">CARD NUMBER</span>
+                            </label>
+                        </div>
+                        <div class="exp-container">
+                            <div class="left name-form">
+                                <input type="text" name="month" id="month" autocomplete="off" required />
+                                <label for="month" class="label-name">
+                                    <span class="content-name">EXP MONTH</span>
+                                </label>
+                            </div>
+                            <span class="slash content-name">/</span>
+                            <div class="middle name-form">
+                                <input type="text" name="month" id="year" autocomplete="off" required />
+                                <label for="year" class="label-name">
+                                    <span class="content-name">YEAR</span>
+                                </label>
+                            </div>
+                            <div class="right name-form">
+                                <input type="text" name="cvv" id="cvv" autocomplete="off" required />
+                                <label for="cvv" class="label-name">
+                                    <span class="content-name">CVV</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="purchase">
+                            <p>PURCHASE AMOUNT</p>
+                            <div class="note">
+                                <P>1 x T-Shirt Size L Color Black</P>
+                                <p>$ 32</p>
+                            </div>
+                        </div>
+                        <div class="btn-submit">
+                            <button type="submit">PURCHASE
+                                <img src="img/iconnext.png" alt="iconnext">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
