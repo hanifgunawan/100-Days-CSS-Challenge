@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+div.hero-img {
+    position: relative;
+    background: linear-gradient(45deg, #004445, #6FB98F);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+}
+
+.calculator {
+    width: 100%;
+}
+
+.result {
+    background-color: #021C1E;
+    font-size: 3em;
+    padding: 0.5em 0.25em;
+}
+
+.history p,
+.output p {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    word-break: break-all;
+    color: #FFF;
+}
+
+.history p {
+    padding-bottom: 0.5em;
+    font-size: 0.5em;
+    color: #ACACAC;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+button {
+    color: #FFF;
+    min-height: 80px;
+    font-size: 1.2em;
+    border: 1px solid #C9C9C9;
+    transition: 0.1s all ease;
+    outline: none;
+}
+
+button:nth-child(19) {
+    grid-column: span 2;
+}
+
+.number {
+    background: #6FB98F;
+}
+
+.operator {
+    background: #004445;
+}
+
+.number:hover {
+    background-color: #9fdbb9;
+}
+
+.operator:hover {
+    background-color: #018183;
+}
+
