@@ -1,0 +1,756 @@
+:root {
+    --primary-color: #038091;
+    --accent-color: #08C790;
+    --black:#191919;
+    --light: #808080;
+    --text-color:#555555;
+    --border: #DFDFDF;
+    --title: #26408B;
+    --nav: #EEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+
+header {
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-logo { 
+    width: 30px;
+    display: block; 
+    margin: 0 0 0 2em;
+}
+
+.input-search {
+    outline: none;
+    transition: width 0.4s ease-in-out;
+    border: none;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+input.input-search:focus {
+    border: 2px solid var(--title);
+    width: 400px;
+}
+
+
+.nav-mobile {
+    width: 25px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-mobile span {
+    border-radius: 5px;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.user-profile {
+    margin: 2em 1em;
+}
+
+
+.search-icon {
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.top-nav ul {
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.top-nav ul li {
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    margin: 0 2em;
+}
+
+
+span.counter {
+    margin-left: 0.3em;
+    display: inline-block;
+    background-color: red;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.notification {
+    position: relative;
+    top: 1.5px;
+    /* margin-right: 2em; */
+}
+
+span.new-notif {
+    position: absolute;
+    left: -1px;
+    top: 1px;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: red;
+    z-index: 2;
+}
+
+aside {
+    margin-top: 6em;
+}
+
+.profile-picture {
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+
+.avatar {
+	min-width: 10%;
+	height: auto;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 50%!important;
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+.right-nav {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ava-profile {
+    display: flex;
+}
+
+.ava-icon {
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 1;
+    margin: 0 0.5em 0 0;
+}
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.user-data .name {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.user-data .email {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.almamater {
+    position: relative;
+    display: flex;
+}
+
+.almamater img {
+    display: block;
+    width: 25px;
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.almamater img:nth-child(1):hover ~ .tooltip-1 {
+    visibility: visible;
+}
+
+.almamater img:nth-child(3):hover ~ .tooltip-2 {
+    visibility: visible;
+}
+
+
+.verified {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    padding: 0 0.8em;
+    align-self: center;
+   
+}
+
+.user-data2 {
+	font-size: 1rem;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.occupation, .address, .website, .social-media {
+    display: flex;
+    margin: 0.2em 0;
+}
+
+.icon-data {
+    fill: var(--text-color);
+    width: 15px;
+    height: auto;
+    margin-right: 0.5em;
+}
+
+.user-entity {
+    margin: 1em;
+}
+
+.user-fame, .following, .followers {
+    display: flex;
+}
+
+.data-text {
+   color: var(--text-color);
+   font-size: 1rem;
+}
+
+.following h4, .followers h4 {
+    margin-right: 0.8em;
+    color: var(--primary-color);
+}
+
+.following, .followers {
+    margin-right: 1.5em;
+}
+
+.btn-edit-profile {
+    text-align: center;
+    background-image: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    margin: 0 1em;
+    padding: 0.6em;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.btn-edit-profile p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-nav {
+    margin: 2em 0;
+    border-bottom: 1px solid var(--light);
+    overflow-x: scroll;
+    text-overflow: none;
+    scrollbar-width: none;
+    font-size: 0.75rem;
+}
+
+.main-nav::-webkit-scrollbar {
+    display: none;
+}
+
+
+.main-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0 1em;
+}
+
+.main-nav ul li {
+    padding: 0.6em 1.2em;
+    position: relative;
+}
+
+.main-nav ul li:hover {
+	color: var(--primary-color);
+}
+
+/* .main-nav ul li:hover::after {
+    width: 100%;
+}
+
+.main-nav ul li::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #038091;
+    transition: 0.3s ease-in-out;
+} */
+
+li.active-tab {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.main-nav ul li.active-tab:hover {
+	color: var(--black);
+	z-index: 2;
+}
+
+.content {
+    margin: 2.5em 1em;
+}
+
+.title {
+    margin-bottom: 0.5em;
+}
+
+.title a {
+    font-weight: 600;
+    color: var(--title);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.title a:hover {
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--title);
+}
+
+.title a:visited {
+    color: var(--title);
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.cover img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.if-over {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(icon/cover-jurnal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+}
+
+.banner-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 0.8em;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    right: 0.8em;
+    bottom: 0.8em;
+    color: var(--primary-color);
+}
+
+.option-2 {
+    color: red;
+}
+
+.arrow-drop {
+    margin-left: 1em;
+    display: block;
+    width: 20px;
+    height: 12px;
+    fill: var(--primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.content-status {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owner a img {
+    display: block;
+    width: 25px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.owner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.add-owner {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: var(--light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-owner span {
+    position: absolute;
+    display: block;
+    width: 12px;
+    border-radius: 5px;
+    height: 2px;
+    background-color: #fff;
+    transform-origin: center center;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.add-owner span:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+
+.likes-watches {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.likes {
+    margin-right: 2em;
+}
+
+.likes, .watch {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bolder;
+    color: var(--text-color);
+    fill: var(--text-color);
+}
+
+.owner a {
+    text-decoration: none;
+}
+
+
+.likes .likes-icon, .watch .watch-icon {
+    width: 20px;
+    height: 15px;
+    display: block;
+    margin-right: 0.5em;
+}
+
+footer {
+    border-top: 1px solid var(--border);
+    padding-top: 2em;
+    margin: 0 1em 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+footer p a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+footer p {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1em;
+    padding: 0.2em;
+    font-size: 0.75rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-1, .tooltip-2 {
+    visibility: hidden;
+    background-color: #fdfb6b;
+    text-align: center;
+    padding: 0.3em 0.7em;
+    font-size: 0.85em;
+    border-radius: 5px;
+    position: absolute;
+    left: -5px;
+    top: 130%;
+}
+
+
+.tooltip-1::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 40%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent #fdfb6b transparent;
+
+}
+
+.tooltip-2::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 55%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent #fdfb6b transparent;
+}
+
+
+/* RESPONSIVE RULES BEST IN 2020*/
+
+/* 1920x1080 | 1366x768 | 360x640 | 414x896 | 1536x864 | 375x667 | */
+
+/* https://css-tricks.com/a-complete-guide-to-css-media-queries/  */
+
+@media screen and (min-width: 375px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    .right-nav {
+        width: auto;
+        justify-content: flex-end;
+    }
+    
+}
+
+@media screen and (min-width: 544px) {
+    .main-nav ul {
+        justify-content: space-between;
+    }
+
+    .cover {
+        width: 100%;
+        height: 250px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }    
+}
+
+@media screen and (min-width: 768px) {
+    .hide-mobile {
+        display: flex;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .notification {
+        margin-right: 1.5em;
+    }
+
+    
+    header .hide-search {
+        display: none;
+    }
+
+    .main-logo {
+        margin: 0 1em 0 0 ;
+        
+    }
+
+    .top-nav ul li {
+        font-size: 0.5rem;
+    }
+
+    span.counter {
+        width: 10px
+    }
+
+    header {
+        padding: 0 1.5em;
+    }
+
+    input.input-search:focus {
+        border: 2px solid var(--title);
+        width: 250px;
+    }
+
+    .container-profile {
+        padding: 0 0.5em;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        order: 1;
+    }
+
+    .wrap-flex {
+        order: 3;
+    }
+    
+    nav.main-nav {
+        background-color: var(--nav);
+        padding-top: 3.5em;
+        order: 1;
+    }
+    
+    main {
+        order: 4;
+    }
+    
+    footer {
+        order: 5;
+    }
+
+    .user-profile {
+        margin-top: 0 ;
+    }
+
+    .wrap-flex {
+        display: flex;
+    }
+
+    .content-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .content {
+        margin: 1em;
+        max-width: 300px;
+    }
+
+    .content-status {
+        width: 100%;
+    }
+
+    .user-profile {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .user-data {
+        padding-top: 2em;
+    }
+
+    aside {
+        margin-top: 1em;
+    }
+
+    .cover {
+        width: 100%;
+        height: 150px;
+    }
+
+    .container-profile {
+        position : fixed;
+        z-index: 5;
+        margin: 0;
+    }
+
+    .content-wrap {
+        margin-left : 10em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 1em;
+        max-width: 100%;
+    }
+
+    .cover {
+        width: 100%;
+        height: 250px;
+    }
+
+    
+}
+
+
+
+
